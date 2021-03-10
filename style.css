@@ -135,6 +135,12 @@ p {
   background: hsl(174, 77%, 80%);
   outline: none;
   cursor: pointer;
+  opacity: 0.8;
+  transition: ease-in-out 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
 }
 
 .slider::after {
@@ -226,7 +232,7 @@ p {
 }
 
 .switch input:checked + .toggle {
-  background-color: #2196f3;
+  background-color: hsl(174, 86%, 45%);
 }
 
 .switch input:checked + .toggle:before {
@@ -256,6 +262,7 @@ hr {
   color: var(--txt-p);
   font-size: 0.8rem;
   margin-bottom: 10px;
+  padding-left: 15px;
 }
 
 .bot-form button {
@@ -264,4 +271,5 @@ hr {
   height: 40px;
   width: 170px;
   border-radius: 25px;
+  cursor: pointer;
 }
