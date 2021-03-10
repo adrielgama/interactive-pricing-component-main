@@ -105,6 +105,7 @@ p {
   letter-spacing: 2px;
 }
 
+.pg-view,
 .month-price {
   display: flex;
   place-items: center;
@@ -115,6 +116,7 @@ p {
   line-height: 0;
 }
 
+.pg-view p,
 .month-price p {
   margin-left: 5px;
 }
