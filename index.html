@@ -35,32 +35,40 @@
       <div class="box-container">
         <form action="" method="post" class="form-box">
           <div class="header-form">
+            <!-- TOGGLE SLIDER SECTION -->
+
             <div class="tp">
               <div class="pg-view">
-                <p>100k</p>
+                <p id="qtdPageview">100k</p>
                 <p>Pageviews</p>
               </div>
-
               <div class="month-price">
-                <h1>$16.00</h1>
+                <h1 id="qtdPrice">$16.00</h1>
                 <p>/ month</p>
               </div>
             </div>
             <div class="sld">
-              <!-- <img src="images/icon-slider.svg" alt="slider-icon" /> -->
               <input
                 type="range"
                 min="1"
-                max="100"
-                value="50"
+                max="5"
+                value=""
                 class="slider"
                 id="myRange"
+                onclick="discountAmount(), setPageView()"
               />
             </div>
+
+            <!-- INPUT SELECT SLIDER PRICE MONTH / YEAR  -->
             <div class="input-section">
               <p>Monthly Billing</p>
               <label class="switch">
-                <input type="checkbox" value="" />
+                <input
+                  type="checkbox"
+                  value=""
+                  id="myCheck"
+                  onclick="discountAmount()"
+                />
                 <span class="toggle"></span>
               </label>
 
