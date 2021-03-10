@@ -121,6 +121,14 @@ p {
   margin-left: 5px;
 }
 
+#hidePriceDesktop {
+  visibility: visible;
+}
+
+#hidePriceMobile {
+  visibility: hidden;
+}
+
 .sld {
   display: flex;
   justify-content: center;
@@ -274,4 +282,107 @@ hr {
   width: 170px;
   border-radius: 25px;
   cursor: pointer;
+}
+
+/* MOBILE SCREEN  */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .top-container {
+    height: 10vh;
+  }
+
+  .top-container h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .top-container p {
+    padding: 0 100px;
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+
+  .circle-bg img {
+    height: 125px;
+    top: 16vh;
+    left: 35vw;
+  }
+
+  .img-bg img {
+    height: 80vh;
+  }
+
+  .box-container {
+    justify-content: space-between;
+    width: 85%;
+    padding: 10px;
+  }
+
+  .tp {
+    flex-direction: column;
+  }
+
+  #hidePriceDesktop {
+    visibility: hidden;
+  }
+
+  #hidePriceMobile {
+    visibility: visible;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .month-price h1 {
+    font-size: 2rem;
+  }
+
+  .pg-view p,
+  .month-price p {
+    font-size: 0.9rem;
+  }
+
+  .input-section {
+    align-items: center;
+  }
+
+  .input-section p {
+    font-size: 0.7rem;
+  }
+
+  .input-section > span {
+    right: 0;
+    padding: 2px 20px;
+    border-radius: 25px;
+    font-size: 0.5rem;
+  }
+
+  /* TOOGLE SWITCH BUTTON  */
+
+  .switch input:checked + .toggle:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+
+  hr {
+    left: -10px;
+    width: 85vw;
+  }
+
+  .bot-form {
+    flex-direction: column;
+  }
+
+  .bot-form ul li {
+    padding-left: 8px;
+  }
+
+  .bot-form ul {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .bot-form button {
+    margin: 30px 0;
+  }
 }
